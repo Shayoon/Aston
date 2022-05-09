@@ -9,13 +9,13 @@ public class Calculatrice {
         float nbr2 = demanderSaisieFloat("Entrez le second nombre");
         if (operateur.equals("/") && nbr2 == 0)
             System.out.println("Impossible de diviser par 0");
-        else 
-        switch (operateur) {
-            case "*" -> System.out.printf("%f * %f = %f", nbr1, nbr2, nbr1 * nbr2);
-            case "/" -> System.out.printf("%f / %f = %f", nbr1, nbr2, nbr1 / nbr2);
-            case "+" -> System.out.printf("%f + %f = %d", nbr1, nbr2, nbr1 + nbr2);
-            case "-" -> System.out.printf("%f - %f = %d", nbr1, nbr2, nbr1 - nbr2);
-        }
+        else
+            switch (operateur) {
+                case "*" -> System.out.printf("%f * %f = %f", nbr1, nbr2, nbr1 * nbr2);
+                case "/" -> System.out.printf("%f / %f = %f", nbr1, nbr2, nbr1 / nbr2);
+                case "+" -> System.out.printf("%f + %f = %f", nbr1, nbr2, nbr1 + nbr2);
+                case "-" -> System.out.printf("%f - %f = %f", nbr1, nbr2, nbr1 - nbr2);
+            }
 
     }
 
