@@ -21,7 +21,7 @@ public class Temperature {
             }
             if (temperature < 0){
                 distance = -temperature;
-                if (distance < distancePlusProche){
+                if (distance <= distancePlusProche){
                     plusProche = temperature;
                     distancePlusProche = distance;
                 }
