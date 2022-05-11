@@ -7,7 +7,7 @@ import java.util.List;
 
 public class RollerCoaster {
 
-    public static int profitDeLaJournée() {
+    public static int profitDeLaJournee() {
         int nbPlaces = 5;
         int nbTours = 3;
         int profit = 0;
@@ -15,9 +15,15 @@ public class RollerCoaster {
         List<Integer> nbrPersonnes = new ArrayList<>();
         nbrPersonnes.add(2);
         nbrPersonnes.add(3);
+        nbrPersonnes.add(2);
         nbrPersonnes.add(5);
-        nbrPersonnes.add(4);
         System.out.println("File de base" + nbrPersonnes);
+
+
+
+
+
+
         for (int i = 0; i < nbTours; i++) {
             System.out.printf("Tour %d ", i + 1);
             nbPlacesRestantes = nbPlaces - nbrPersonnes.get(0);
@@ -33,9 +39,9 @@ public class RollerCoaster {
                     nbrRotate--;
                     profit += nbrPersonnes.get(indiceRecherche);
                     System.out.printf(",groupe %d rentre", indiceRecherche + 1);
-                } else vaDemarrer = false;
+                } else vaDemarrer = true;
                 indiceRecherche++;
-            } while (indiceRecherche < nbrPersonnes.size());
+            } while (indiceRecherche < nbrPersonnes.size() && !vaDemarrer);
             Collections.rotate(nbrPersonnes, nbrRotate);
             System.out.print(". Etat de la file" + nbrPersonnes);
             System.out.println();
