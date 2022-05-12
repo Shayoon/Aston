@@ -10,8 +10,11 @@ public class Rectangle {
     }
 
     /**
-     * Return the surface of the rectangle
-     * @return int
+     * This method calculates the area of a rectangle
+     *
+     * @author Quentin
+     *
+     * @return (int) Return the surface of the rectangle
      */
     public int surface(){
         return a*b;
