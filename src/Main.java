@@ -1,11 +1,12 @@
 import fr.exoRollerCoaster.RollerCoaster;
-import poo.rectangle.Rectangle;
-import poo.somme.Somme;
-
+import poo.additionComplex.Complexe;
 
 public class Main {
     public static void main(String[] args) {
-        Somme somme = new Somme(4,6);
-        somme.sum();
+        System.out.println("Premier nombre: ");
+        Complexe c1 = Complexe.creerComplexe();
+        System.out.println("Deuxième nombre");
+        Complexe c2 = Complexe.creerComplexe();
+        Complexe.sommeComplexe(c1,c2);
     }
 }
